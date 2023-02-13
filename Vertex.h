@@ -11,14 +11,16 @@
 class Vertex {
 private:
     int id;
-    std::vector<Vertex> list;
+    std::vector<int> list;
 public:
     Vertex(int id);
 
     void setID(int id);
     int getID();
 
-    void addV(Vertex v);
+    std::vector<int> getList();
+
+    void addV(int v);
 };
 
 

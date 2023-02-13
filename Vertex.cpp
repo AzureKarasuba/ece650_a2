@@ -12,12 +12,16 @@ int Vertex::getID() {
     return this->id;
 }
 
-void Vertex::addV(Vertex v) {
+void Vertex::addV(int v) {
     list.push_back(v);
 }
 
 Vertex::Vertex(int id) {
     this->id = id;
-    this->list = std::vector<Vertex>();
+    this->list = std::vector<int>();
+}
+
+std::vector<int> Vertex::getList() {
+    return list;
 }
 
