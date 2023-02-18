@@ -11,7 +11,7 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="ece650_a2" targetName="ece650_a2" />
+      <config projectName="a2ece650" targetName="ece650_a2" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -59,22 +59,23 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager" selected="CMake Application.ece650_a2">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ece650_a2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ece650_a2" TARGET_NAME="ece650_a2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ece650_a2" RUN_TARGET_NAME="ece650_a2">
+    <configuration name="ece650_a2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="a2ece650" TARGET_NAME="ece650_a2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="a2ece650" RUN_TARGET_NAME="ece650_a2">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -95,6 +96,13 @@
       <workItem from="1675976142829" duration="1939000" />
       <workItem from="1676143977395" duration="7214000" />
       <workItem from="1676233622853" duration="15534000" />
+      <workItem from="1676316034466" duration="3147000" />
+      <workItem from="1676427085108" duration="1870000" />
+      <workItem from="1676570953220" duration="1000" />
+      <workItem from="1676587105848" duration="1494000" />
+      <workItem from="1676657110903" duration="14300000" />
+      <workItem from="1676682669235" duration="4043000" />
+      <workItem from="1676750232406" duration="2206000" />
     </task>
     <servers />
   </component>
