@@ -49,15 +49,15 @@ cmake_ninja_workdir = D$:/Files/23Winter/ECE650/ece650_a2/cmake-build-debug/
 
 build cmake_object_order_depends_target_ece650_a2: phony || CMakeFiles/ece650_a2.dir
 
-build CMakeFiles/ece650_a2.dir/main.cpp.obj: CXX_COMPILER__ece650_a2_Debug D$:/Files/23Winter/ECE650/ece650_a2/main.cpp || cmake_object_order_depends_target_ece650_a2
-  DEP_FILE = CMakeFiles\ece650_a2.dir\main.cpp.obj.d
+build CMakeFiles/ece650_a2.dir/Vertex.cpp.obj: CXX_COMPILER__ece650_a2_Debug D$:/Files/23Winter/ECE650/ece650_a2/Vertex.cpp || cmake_object_order_depends_target_ece650_a2
+  DEP_FILE = CMakeFiles\ece650_a2.dir\Vertex.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
   INCLUDES = -ID:/Files/23Winter/ECE650/ece650_a2/.
   OBJECT_DIR = CMakeFiles\ece650_a2.dir
   OBJECT_FILE_DIR = CMakeFiles\ece650_a2.dir
 
-build CMakeFiles/ece650_a2.dir/Vertex.cpp.obj: CXX_COMPILER__ece650_a2_Debug D$:/Files/23Winter/ECE650/ece650_a2/Vertex.cpp || cmake_object_order_depends_target_ece650_a2
-  DEP_FILE = CMakeFiles\ece650_a2.dir\Vertex.cpp.obj.d
+build CMakeFiles/ece650_a2.dir/a2ece650.cpp.obj: CXX_COMPILER__ece650_a2_Debug D$:/Files/23Winter/ECE650/ece650_a2/a2ece650.cpp || cmake_object_order_depends_target_ece650_a2
+  DEP_FILE = CMakeFiles\ece650_a2.dir\a2ece650.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
   INCLUDES = -ID:/Files/23Winter/ECE650/ece650_a2/.
   OBJECT_DIR = CMakeFiles\ece650_a2.dir
@@ -71,7 +71,7 @@ build CMakeFiles/ece650_a2.dir/Vertex.cpp.obj: CXX_COMPILER__ece650_a2_Debug D$:
 #############################################
 # Link the executable ece650_a2.exe
 
-build ece650_a2.exe: CXX_EXECUTABLE_LINKER__ece650_a2_Debug CMakeFiles/ece650_a2.dir/main.cpp.obj CMakeFiles/ece650_a2.dir/Vertex.cpp.obj
+build ece650_a2.exe: CXX_EXECUTABLE_LINKER__ece650_a2_Debug CMakeFiles/ece650_a2.dir/Vertex.cpp.obj CMakeFiles/ece650_a2.dir/a2ece650.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ece650_a2.dir

@@ -229,6 +229,10 @@ int main(){
 
             //std::cout << "after getline" << std::endl;
 
+            if(line.empty()){
+                break;
+            }
+
             // command is the first character
             char command = line.at(0);
             //std::cout << "command is" << std::endl;
