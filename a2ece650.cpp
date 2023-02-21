@@ -33,57 +33,6 @@ std::stack<int> searchForRoute(std::vector<int> path, int source, int destinatio
 
 }
 
-std::vector<int> Dijkstra(std::vector<Vertex*> &graph, int sourceNum, int destination){
-    // an array to store the visit state of nodes.
-    std::vector<bool> visited(graph.size(),false);
-    std::unordered_set<int> spt;
-    // an array to store distance from source
-    std::vector<int> distance(graph.size(),std::numeric_limits<int>::max());
-
-    // set distance to source node to be 0
-    distance[sourceNum] = 0;
-    visited[sourceNum] = true;
-    int current = sourceNum;
-    //std::cout << "before visit" << std::endl;
-    while(spt.size() != graph.size()){
-        //std::cout << "spt size is: " << spt.size() << std::endl;
-        //std::cout << "graph.size() is: " << graph.size() << std::endl;
-        // check all adjacent nodes of current node
-        //std::cout << "before 1st loop" << std::endl;
-       for (auto n: graph[current]->getList()) {
-            //update their distances to source node if it's not in the visited vector and
-            // its current distance is smaller than the new distance
-            if (!visited[n] && distance[n] > distance[current] + 1)
-                distance[n] = distance[current] + 1;
-       }
-        //std::cout << "after 1st loop" << std::endl;
-
-        int shortestDistanceNode = graph[current]->getList()[0];
-        //std::cout << "before 2nd loop" << std::endl;
-        for(auto v:spt){
-            //std::cout << "before 2nd-2nd loop" << std::endl;
-            //std::cout << "nInSet is now: " << v << std::endl;
-            for(auto n:graph[v]->getList()){
-                //update their distances to source node if it's not in the visited vector and
-                // its current distance is smaller than the new distance
-                //std::cout << "before if in 2nd-2nd loop" << std::endl;
-                if ( !visited[n] && distance[n] < distance[shortestDistanceNode] )
-                    shortestDistanceNode = n;
-                //std::cout << "after if in 2nd-2nd loop" << std::endl;
-            }
-            //std::cout << "after 2nd-2nd loop" << std::endl;
-        }
-
-        spt.insert(shortestDistanceNode);
-        std::cout << "shortestDistanceNode is: " << shortestDistanceNode << std::endl;
-        current = shortestDistanceNode;
-        visited[shortestDistanceNode] = true;
-        std::cout << "after 2nd loop" << std::endl;
-    }
-
-    return distance;
-}
-
 
 std::vector<int> BFS(std::unordered_map<int, Vertex*> &graph, int sourceNum, int destination){
     //queue to keep track of nodes
@@ -139,7 +88,7 @@ std::list<int> findBest(std::unordered_map<int, Vertex*> &graph, std::vector<std
 
     std::list<int> optimalPath(999,-1);
 
-    for(int i = 0;i < lists.size(); i++){
+    for(unsigned i = 0;i < lists.size(); i++){
         //std::cout << "check list " << i << std::endl;
         // all adjacent lists
         for( auto v: graph.find(source)->second->getList()){
@@ -336,7 +285,7 @@ int main(){
                             //std::cout << "graph size is " << graph.size() << std::endl;
 
                             try{
-                                if (node1_int < 0 || node2_int < 0 || node1_int >= graph.size() || node2_int >= graph.size()){
+                                if (node1_int < 0 || node2_int < 0 || (unsigned)node1_int >= graph.size() || (unsigned)node2_int >= graph.size()){
                                     throw std::invalid_argument("Error: index out of bound.");
                                 }
 
@@ -369,7 +318,7 @@ int main(){
 
 
                     try{
-                        if(source < 0 || source >= graph.size() || destination < 0 || destination >= graph.size()){
+                        if(source < 0 || (unsigned)source >= graph.size() || destination < 0 || (unsigned)destination >= graph.size()){
                             throw std::invalid_argument("Error: Index out of bound.");
                         }
                         std::vector<int> path;
